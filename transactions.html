@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wallet - Últimos Movimientos</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet"
+        href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <main class="container mt-5">
+
+        <div class="card shadow">
+
+            <!-- Encabezado -->
+            <div class="card-header bg-primary text-white text-center">
+
+                <h2 class="mb-0">
+                    Últimos Movimientos
+                </h2>
+
+            </div>
+
+            <div class="card-body">
+
+                <!-- Filtro -->
+                <div class="form-group">
+
+                    <label for="transactionFilter">
+                        Filtrar movimientos:
+                    </label>
+
+                    <select
+                        id="transactionFilter"
+                        class="form-control">
+
+                        <option value="todos">
+                            Todos los movimientos
+                        </option>
+
+                        <option value="compra">
+                            Compras
+                        </option>
+
+                        <option value="deposito">
+                            Depósitos
+                        </option>
+
+                        <option value="transferencia">
+                            Transferencias
+                        </option>
+
+                        <option value="retiro">
+                            Retiros
+                        </option>
+
+                        <option value="recepcion">
+                            Recepciones
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Lista de movimientos -->
+                <ul
+                    id="transactionList"
+                    class="list-group mb-4">
+                </ul>
+
+
+                <!-- Mensaje -->
+                <div id="transactionMessage"></div>
+
+
+                <!-- Volver al menú -->
+                <a
+                    href="menu.html"
+                    class="btn btn-secondary btn-block">
+
+                    Volver al Menú Principal
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <!-- JavaScript principal -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

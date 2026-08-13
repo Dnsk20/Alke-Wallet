@@ -1,0 +1,610 @@
+/* =========================================================
+   ESTILOS GENERALES - BILLETERA DIGITAL
+   PALETA MORADO + AZUL
+   ========================================================= */
+
+body {
+    background-color: #F5F6FA;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2D3436;
+    padding-bottom: 30px;
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.container {
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.card-header {
+    background-color: #2D3436 !important;
+    border: none;
+    padding: 20px;
+}
+
+.card-header h2 {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   CUERPO DE LA TARJETA
+   ========================================================= */
+
+.card-body {
+    padding: 30px;
+}
+
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    color: #2D3436;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+label {
+    font-weight: 600;
+    color: #2D3436;
+}
+
+
+/* =========================================================
+   INPUTS Y SELECT
+   ========================================================= */
+
+.form-control {
+    border: 1px solid #dfe1e8;
+    border-radius: 8px;
+    min-height: 44px;
+    color: #2D3436;
+}
+
+.form-control:focus {
+    border-color: #6C5CE7;
+    box-shadow: 0 0 0 0.15rem rgba(108, 92, 231, 0.20);
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   BOTÓN PRINCIPAL - MORADO
+   ========================================================= */
+
+.btn-primary {
+    background-color: #6C5CE7 !important;
+    border-color: #6C5CE7 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #5848d6 !important;
+    border-color: #5848d6 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   BOTÓN ENVIAR DINERO - VERDE
+   ========================================================= */
+
+.btn-success {
+    background-color: #00B894 !important;
+    border-color: #00B894 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #009f80 !important;
+    border-color: #009f80 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   BOTÓN SECUNDARIO
+   ========================================================= */
+
+.btn-secondary {
+    background-color: #74B9FF !important;
+    border-color: #74B9FF !important;
+    color: #FFFFFF !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #5da8ed !important;
+    border-color: #5da8ed !important;
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   ALERTAS
+   ========================================================= */
+
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* Información - Azul claro */
+
+.alert-info {
+    background-color: #E4F1FF;
+    color: #2D5F8A;
+}
+
+
+/* Éxito - Verde */
+
+.alert-success {
+    background-color: #DDF8F1;
+    color: #007A63;
+}
+
+
+/* Error - Rojo */
+
+.alert-danger {
+    background-color: #FDE3E3;
+    color: #A92323;
+}
+
+
+/* =========================================================
+   SALDO
+   ========================================================= */
+
+.alert-success h3 {
+    color: #007A63;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   LISTA DE CONTACTOS
+   ========================================================= */
+
+#contactList {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Contacto */
+
+.contacto-item {
+    cursor: pointer;
+    border: 1px solid #dfe1e8;
+    transition: all 0.2s ease;
+}
+
+
+/* Color intercalado 1 - Morado claro */
+
+.contacto-color-1 {
+    background-color: #F0EDFF;
+}
+
+
+/* Color intercalado 2 - Azul claro */
+
+.contacto-color-2 {
+    background-color: #EAF5FF;
+}
+
+
+/* Contacto seleccionado */
+
+.contacto-item.active {
+    background-color: #6C5CE7 !important;
+    color: #FFFFFF !important;
+    border-color: #6C5CE7;
+}
+
+
+/* Texto secundario del contacto seleccionado */
+
+.contacto-item.active .text-muted {
+    color: #EAE7FF !important;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.contacto-item:hover {
+    transform: translateX(3px);
+    filter: brightness(0.97);
+}
+
+
+/* =========================================================
+   DATOS DEL CONTACTO
+   ========================================================= */
+
+.contact-name {
+    font-size: 17px;
+    color: #2D3436;
+}
+
+.contacto-item.active .contact-name {
+    color: #FFFFFF;
+}
+
+.contact-details {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LISTA DE MOVIMIENTOS
+   ========================================================= */
+
+#transactionList {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Movimiento */
+
+.movimiento-item {
+    border: 1px solid #dfe1e8;
+    transition: all 0.2s ease;
+}
+
+
+/* Color intercalado 1 - Morado claro */
+
+.movimiento-color-1 {
+    background-color: #F0EDFF;
+}
+
+
+/* Color intercalado 2 - Azul claro */
+
+.movimiento-color-2 {
+    background-color: #EAF5FF;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.movimiento-item:hover {
+    transform: translateX(3px);
+    filter: brightness(0.97);
+}
+
+
+/* =========================================================
+   FILTRO DE MOVIMIENTOS
+   ========================================================= */
+
+#transactionFilter {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MENSAJES
+   ========================================================= */
+
+#mensaje,
+#alert-container,
+#depositMessage,
+#transactionMessage,
+#menu-message {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #2D3436;
+    color: #FFFFFF;
+    border: none;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.modal-header .close {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BOTONES DENTRO DEL MODAL
+   ========================================================= */
+
+.modal-body .btn {
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   SOMBRA
+   ========================================================= */
+
+.shadow {
+    box-shadow: 0 8px 25px rgba(45, 52, 54, 0.10) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        margin-top: 20px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-header {
+        padding: 15px;
+    }
+
+    .card-header h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   MEJORAS VISUALES Y RESPONSIVE - PUNTO 12
+   ===================================================== */
+
+/* Evita desbordamientos horizontales */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Las imágenes y elementos multimedia se adaptan al contenedor */
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formularios cómodos en escritorio y móvil */
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+.form-control {
+    min-height: 44px;
+}
+
+/* Botones más cómodos para interacción táctil */
+.btn {
+    min-height: 44px;
+}
+
+/* Las tarjetas mantienen márgenes razonables en pantallas pequeñas */
+.card {
+    max-width: 100%;
+}
+
+/* Evita que textos largos rompan la interfaz */
+.card,
+.alert,
+.list-group-item,
+.modal-content {
+    overflow-wrap: anywhere;
+}
+
+/* =====================================================
+   TABLETS
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* =====================================================
+   CELULARES
+   ===================================================== */
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        margin-top: 20px !important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-header {
+        padding: 14px 12px;
+    }
+
+    .card-body {
+        padding: 16px 12px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    .form-control {
+        font-size: 16px;
+    }
+
+    .alert {
+        padding: 12px;
+    }
+
+    /* Modal adaptado a pantallas pequeñas */
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    /* Evita que filtros ocupen más espacio del necesario */
+    #filterType {
+        width: 100%;
+    }
+}
+
+/* =====================================================
+   PANTALLAS MUY PEQUEÑAS
+   ===================================================== */
+
+@media (max-width: 360px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .card-body {
+        padding: 12px 10px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+    }
+}

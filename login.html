@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wallet - Login</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <div class="card shadow">
+
+            <!-- Encabezado -->
+            <div class="card-header bg-primary text-white text-center">
+
+                <h2 class="mb-0">
+                    Billetera Digital
+                </h2>
+
+            </div>
+
+            <div class="card-body">
+
+                <!-- Alertas -->
+                <div id="alert-container"></div>
+
+                <!-- Formulario de Login -->
+                <!-- DATOS DE ACCESO PARA PRUEBAS
+                            Correo: admin@gmail.com
+                            Contraseña: 1234 
+                -->
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Correo electrónico:
+                        </label>
+
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            Contraseña:
+                        </label>
+
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
+                            required>
+
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn btn-primary btn-block">
+
+                        Iniciar sesión
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <!-- JavaScript principal -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
